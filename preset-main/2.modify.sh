@@ -9,7 +9,7 @@ sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_genera
 #修改型号显示
 #sed -i 's/Xiaomi Redmi Router AC2100/Redmi AC2100/g' target/linux/ramips/dts/mt7621_xiaomi_redmi-router-ac2100.dts
 #sed -i 's/Xiaomi Mi Router AC2100/Xiaomi AC2100/g' target/linux/ramips/dts/mt7621_xiaomi_mi-router-ac2100.dts
-#sed -i 's/Xiaomi Mi Router CR6606/Xiaomi CR6606/g' target/linux/ramips/dts/mt7621_xiaomi_mi-router-cr6606.dts
+sed -i 's/Xiaomi Mi Router CR6606/Xiaomi CR660X/g' target/linux/ramips/dts/mt7621_xiaomi_mi-router-cr6606.dts
 #sed -i 's/Xiaomi Mi Router CR6608/Xiaomi CR6608/g' target/linux/ramips/dts/mt7621_xiaomi_mi-router-cr6608.dts
 #sed -i 's/Xiaomi Mi Router CR6609/Xiaomi CR6609/g' target/linux/ramips/dts/mt7621_xiaomi_mi-router-cr6609.dts
 
@@ -27,7 +27,7 @@ mkdir -p files/etc/uci-defaults
 cp $DEPLOYDIR/uci-scripts/* files/etc/uci-defaults/
 
 #复制内核5.10版本CPU超频补丁
-#cp extra-files/322-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.10/
+cp extra-files/322-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.10/
 
 #设置WIFI
 #sed -i 's/OpenWrt/coolxiaomi/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
