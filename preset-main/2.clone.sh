@@ -14,3 +14,4 @@ git clone --depth 1 -b packages https://github.com/xiaorouji/openwrt-passwall.gi
 svn export https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
 svn export https://github.com/xiaorouji/openwrt-passwall2/trunk/luci-app-passwall2
 svn export https://github.com/vernesong/OpenClash/trunk/luci-app-openclash
+git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
